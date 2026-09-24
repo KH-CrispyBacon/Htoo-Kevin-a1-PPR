@@ -17,6 +17,10 @@ namespace MohawkGame2D
         {
             Window.SetTitle("Genie in a bottle!");
             Window.SetSize(400, 400);
+
+    
+               
+           
         }
 
         /// <summary>
@@ -26,10 +30,22 @@ namespace MohawkGame2D
         {
             Window.ClearBackground(255);
 
-           
 
-          
-            
+
+
+            /// Setting up sand and sky background color
+
+         
+            Draw.SetFillColor(210, 180, 140);
+            Draw.SetLineColor(0);
+            Draw.SetLineSize(1);
+            Draw.Rectangle(0, 240, 400, 400);
+
+            Draw.SetFillColor(135, 206, 235);
+            Draw.SetLineColor(0);
+            Draw.SetLineSize(1);
+            Draw.Rectangle(0, 0, 400, 240);
+
             /// Setup the Lamp Color, size and outline color
             Draw.SetFillColor(255, 255, 0);
             Draw.SetLineColor(0, 0, 0);
