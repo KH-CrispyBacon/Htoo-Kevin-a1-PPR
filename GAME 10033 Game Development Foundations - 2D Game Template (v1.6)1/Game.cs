@@ -24,15 +24,22 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-            Window.ClearBackground(0, 0, 0);
+            Window.ClearBackground(255);
+
+           
 
           
             
-            /// Setup the Lamp Color, size and outlien color
+            /// Setup the Lamp Color, size and outline color
             Draw.SetFillColor(255, 255, 0);
             Draw.SetLineColor(255, 255, 0);
             Draw.SetLineSize(1);
 
+
+
+            /// Making the shapes to design the lamp
+            
+        
             /// Triangles first
             Draw.Triangle(140, 300, 180, 300, 180, 320);
             Draw.Triangle(180, 340, 200, 340, 200, 360);
@@ -53,6 +60,49 @@ namespace MohawkGame2D
             /// Squares finale
             Draw.Square(240, 280, 20);
             Draw.Square(340, 320, 20);
+
+            /// making user input where if the space bar is held down than the genie will appear and if the space bar is let go the genie will disappear
+            /// 
+            /// making sure the space is held down or not
+            if (Input. IsKeyboardKeyDown(KeyboardKey.Space) == true)
+            {
+                /// creating genie
+                Draw.SetFillColor(0, 0, 255);
+                Draw.SetLineColor(0, 0, 255);
+                Draw.SetLineSize(1);
+
+                ///Creating triangles first
+
+                Draw.Triangle(100, 280, 120, 280, 120, 300);
+                Draw.Triangle(120, 260, 140, 260, 120, 280);
+                Draw.Triangle(180, 240, 200, 240, 180, 260);
+                Draw.Triangle(220, 220, 240, 220, 220, 240);
+                Draw.Triangle(240, 200, 280, 200, 240, 220);
+                Draw.Triangle(220, 20, 240, 40, 220, 40);
+
+                /// Rectangles next
+
+                Draw.Rectangle(120, 240, 60, 20);
+                Draw.Rectangle(180, 220, 40, 20);
+                Draw.Rectangle(180, 200, 60, 20);
+                Draw.Rectangle(180, 100, 100, 100);
+                Draw.Rectangle(200, 60, 60, 40);
+                Draw.Rectangle(140, 100, 20, 60);
+                Draw.Rectangle(300, 100, 20, 60);
+
+                /// Squares finale
+
+                Draw.Square(100, 260, 20);
+                Draw.Square(160, 100, 20);
+                Draw.Square(280, 100, 20);
+                Draw.Square(200, 20, 20);
+                Draw.Square(220, 40, 20);
+
+            }
+            
+          
+
+       
 
 
             
