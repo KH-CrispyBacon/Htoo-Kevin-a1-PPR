@@ -15,7 +15,7 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-            Window.SetTitle("Genie in a bottle");
+            Window.SetTitle("Genie in a bottle!");
             Window.SetSize(400, 400);
         }
 
@@ -32,7 +32,7 @@ namespace MohawkGame2D
             
             /// Setup the Lamp Color, size and outline color
             Draw.SetFillColor(255, 255, 0);
-            Draw.SetLineColor(255, 255, 0);
+            Draw.SetLineColor(0, 0, 0);
             Draw.SetLineSize(1);
 
 
@@ -67,8 +67,8 @@ namespace MohawkGame2D
             if (Input. IsKeyboardKeyDown(KeyboardKey.Space) == true)
             {
                 /// creating genie
-                Draw.SetFillColor(0, 0, 255);
-                Draw.SetLineColor(0, 0, 255);
+                Draw.SetFillColor(0, 255, 255);
+                Draw.SetLineColor(0, 0, 0);
                 Draw.SetLineSize(1);
 
                 ///Creating triangles first
@@ -98,7 +98,16 @@ namespace MohawkGame2D
                 Draw.Square(200, 20, 20);
                 Draw.Square(220, 40, 20);
 
+                /// Making eyes
+
+                Draw.SetFillColor(0);
+
+                Draw.Circle(220, 80, 5);
+                Draw.Circle(240, 80, 5);
+
             }
+          
+
             
           
 
