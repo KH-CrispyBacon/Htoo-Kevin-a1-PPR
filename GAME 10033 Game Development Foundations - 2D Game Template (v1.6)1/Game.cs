@@ -83,7 +83,7 @@ namespace MohawkGame2D
             if (Input. IsKeyboardKeyDown(KeyboardKey.Space) == true)
             {
                 /// creating genie
-                Draw.SetFillColor(0, 255, 255);
+                Draw.SetFillColor(25, 189, 255);
                 Draw.SetLineColor(0, 0, 0);
                 Draw.SetLineSize(1);
 
