@@ -16,7 +16,7 @@ namespace MohawkGame2D
         public void Setup()
         {
             Window.SetTitle("Genie in a bottle");
-            Window.SetSize(200, 200);
+            Window.SetSize(400, 400);
         }
 
         /// <summary>
@@ -34,25 +34,25 @@ namespace MohawkGame2D
             Draw.SetLineSize(1);
 
             /// Triangles first
-            Draw.Triangle(70, 150, 90, 150, 90, 160);
-            Draw.Triangle(90, 170, 100, 170, 100, 180);
-            Draw.Triangle(100, 190, 110, 180, 110, 190);
-            Draw.Triangle(110, 150, 120, 140, 120, 150);
-            Draw.Triangle(130, 140, 130, 150, 140, 150);
-            Draw.Triangle(130, 180, 130, 190, 140, 190);
-            Draw.Triangle(150, 180, 150, 170, 160, 170);
-            Draw.Triangle(160, 150, 160, 160, 170, 150);
+            Draw.Triangle(140, 300, 180, 300, 180, 320);
+            Draw.Triangle(180, 340, 200, 340, 200, 360);
+            Draw.Triangle(200, 380, 220, 360, 220, 380);
+            Draw.Triangle(220, 300, 240, 280, 240, 300);
+            Draw.Triangle(260, 280, 260, 300, 280, 300);
+            Draw.Triangle(260, 360, 260, 380, 280, 380);
+            Draw.Triangle(300, 340, 320, 340, 300, 360);
+            Draw.Triangle(320, 300, 340, 300, 320, 320);
             
             /// Rectangles next
-            Draw.Rectangle(90, 150, 70, 20);
-            Draw.Rectangle(160, 140, 30, 10);
-            Draw.Rectangle(180, 150, 10, 20);
-            Draw.Rectangle(100, 170, 50, 10);
-            Draw.Rectangle(110, 180, 20, 10);
+            Draw.Rectangle(180, 300, 140, 40);
+            Draw.Rectangle(320, 280, 60, 20);
+            Draw.Rectangle(360, 300, 20, 40);
+            Draw.Rectangle(200, 340, 100, 20);
+            Draw.Rectangle(220, 360, 40, 20);
 
             /// Squares finale
-            Draw.Square(120, 140, 10);
-            Draw.Square(170, 160, 10);
+            Draw.Square(240, 280, 20);
+            Draw.Square(340, 320, 20);
 
 
             
